@@ -1,0 +1,33 @@
+{
+  "name": "steam-workshop-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.cjs",
+  "scripts": {
+    "start": "cd dist & node index.js",
+    "build": "copyfiles -u 1 src/website/** dist & tsc --outDir dist",
+    "test": "rimraf dev & copyfiles -u 1 src/website/** dev & tsc --outDir dev & cd dev & node index.js"
+  },
+  "keywords": [],
+  "author": "Serbinskis",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "archiver": "^7.0.1",
+    "express": "^4.17.1",
+    "fs-extra": "^11.3.3",
+    "got": "^11.8.1",
+    "node-schedule": "^2.1.0",
+    "serbinskis-utils": "^1.0.79",
+    "undici": "^7.21.0"
+  },
+  "engines": {
+    "node": "24.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^4.1.2",
+    "typescript": "^5.8.3"
+  }
+}

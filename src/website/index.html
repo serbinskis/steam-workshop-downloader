@@ -1,0 +1,71 @@
+<head>
+  <title>Steam Workshop Downloader</title>
+  <link rel="stylesheet" href="./css/bootstrap.webpack.css">
+</head>
+
+<body style="background-color: #020214;">
+  <div id="root">
+     <div class="background-image"></div>
+     <main class="container dark-mode">
+        <div class="card mt-2 mb-2 glass">
+           <div class="card-header d-flex justify-content-between align-items-center">
+              <a href="https://steamworkshopdownloader.io/">
+                 <h4 class="m-0 p-0 d-block d-lg-none">Steam Workshop Downloader</h4>
+                 <h1 class="m-0 p-0 d-none d-lg-block">Steam Workshop Downloader</h1>
+              </a>
+           </div>
+        </div>
+        <div class="card mb-2 glass">
+           <div class="card-body">
+              <div class="text-center">
+                 <p>Want to download files from the steam workshop? This website will show you how it's done.</p>
+                 <p>Enter the file you want to download and follow the interactive tutorial.</p>
+              </div>
+           </div>
+        </div>
+        <div class="card mb-2 text-center glass">
+           <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center pb-2">
+                 <div class="input-group col-12"><input type="text" class="form-control text-center" id="downloadUrlLabel" rows="4" placeholder="http://steamcommunity.com/sharedfiles/filedetails/?id=xxxxxxxxxx" value=""></div>
+              </div>
+           </div>
+        </div>
+
+        <div class="card mb-2 glass" id="workshop-card" style="visibility: hidden">
+           <div class="card-body">
+              <div class="card">
+                 <div class="card-body p-1">
+                    <div class="d-flex justify-content-between">
+                       <div class="d-flex flex-row itemContent">
+                          <div>
+                             <div class="card mr-2">
+                               <a target="_blank noopener noreferrer">
+                                 <img id="workshop-img" class="do-not-darkmode" width="64" height="64">
+                               </a>
+                             </div>
+                          </div>
+                          <div class="d-flex flex-column align-items-stretch">
+                             <h6>
+                                <a target="_blank noopener noreferrer"><strong id="workshop-title"></strong></a>
+                                &nbsp;&nbsp;&nbsp;<small class="text-muted">Created:&nbsp;<time id="workshop-created" datetime="0"></time></small>
+                                &nbsp;&nbsp;&nbsp;<small class="text-muted">Updated:&nbsp;<time id="workshop-updated" datetime="0"></time></small>
+                             </h6>
+                             <div class="d-flex flex-column" style="flex-direction: unset !important; align-items: flex-end !important; margin-bottom: 5px; flex-grow: 1;">
+                                <span id="workshop-size"></span>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="d-flex align-items-end align-self-stretch flex-column" style="flex-direction: unset !important; align-items: center !important; margin-right: 10px;">
+                          <button class="btn btn-danger" id="download-button">Download</button>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </main>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
