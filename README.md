@@ -8,6 +8,14 @@ Download Steam Workshop content directly and easily with a minimal, user-friendl
 
 This project provides a simple and convenient way to download files from the Steam Workshop. Just paste a workshop URL and get a downloadable link along with preview info such as title, size, and last update date.
 
+## Setup
+
+To set up the UNO game locally, follow these steps:
+
+1. Clone this repository to your local machine using `git clone https://github.com/serbinskis/steam-workshop-downloader`.
+2. Navigate to the project directory.
+3. Run `npm i`, `npm run build` and `npm run start`.
+
 ## Key Features
 
 - **🧩 Paste-and-Download**  
